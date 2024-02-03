@@ -16,17 +16,17 @@ class Header extends Component {
             </button>
             <ul className="menu-list">
               <li className="menu-item">
-                <Link to="/" className="nav-link">
+                <Link to="/" className="nav-link" onClick={close}>
                   Home
                 </Link>
               </li>
               <li className="menu-item">
-                <Link to="/about" className="nav-link">
+                <Link to="/about" className="nav-link" onClick={close}>
                   About
                 </Link>
               </li>
               <li className="menu-item">
-                <Link to="/contact" className="nav-link">
+                <Link to="/contact" className="nav-link" onClick={close}>
                   Contact
                 </Link>
               </li>
