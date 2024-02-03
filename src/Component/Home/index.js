@@ -116,7 +116,7 @@ class Home extends Component {
           </ul>
         </div>
         <div className="home-league">
-          <h1 className="home-about-heading">Winning Screenshots</h1>
+          <h1 className="home-about-heading">All Leagues & Matches</h1>
           <ul className="league-list">
             {leagueDetails.map((eachItem) => (
               <li className="league-item" key={eachItem.id}>
