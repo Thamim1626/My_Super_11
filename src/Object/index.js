@@ -355,3 +355,172 @@ export const venueDetails = [
       "https://th.bing.com/th?id=OIP.a7yOXc6uZrMuIMYK3AZ1FAHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
   },
 ];
+
+export const combainDetail = [
+  { id: 1, name: "MS Dhoni" },
+  { id: 2, name: "Ravindra Jadeja" },
+  { id: 3, name: "Faf du Plessis" },
+  { id: 4, name: "Moeen Ali" },
+  { id: 5, name: "Deepak Chahar" },
+  { id: 6, name: "Imran Tahir" },
+  { id: 7, name: "Virat Kohli" },
+  { id: 8, name: "AB de Villiers" },
+  { id: 9, name: "Glenn Maxwell" },
+  { id: 10, name: "Devdutt Padikkal" },
+  { id: 11, name: "Yuzvendra Chahal" },
+];
+
+export const cskPlayers = [
+  { id: 1, name: "MS Dhoni" },
+  { id: 2, name: "Suresh Raina" },
+  { id: 3, name: "Ravindra Jadeja" },
+  { id: 4, name: "Faf du Plessis" },
+  { id: 5, name: "Deepak Chahar" },
+  { id: 6, name: "Imran Tahir" },
+  { id: 7, name: "Ambati Rayudu" },
+  { id: 8, name: "Shardul Thakur" },
+  { id: 9, name: "Dwayne Bravo" },
+  { id: 10, name: "Moeen Ali" },
+  { id: 11, name: "Ruturaj Gaikwad" },
+];
+
+export const rcbPlayers = [
+  { id: 12, name: "Virat Kohli" },
+  { id: 13, name: "AB de Villiers" },
+  { id: 14, name: "Yuzvendra Chahal" },
+  { id: 15, name: "Glenn Maxwell" },
+  { id: 16, name: "Devdutt Padikkal" },
+  { id: 17, name: "Mohammed Siraj" },
+  { id: 18, name: "Kyle Jamieson" },
+  { id: 19, name: "Washington Sundar" },
+  { id: 20, name: "Dan Christian" },
+  { id: 21, name: "Srikar Bharat" },
+  { id: 22, name: "Harshal Patel" },
+];
+
+export const subscriptionDetails = [
+  {
+    id: uuidv4(),
+    plan: "Bronze",
+    price: "₹499/-",
+    planList: [
+      {
+        id: uuidv4(),
+        planDes: "lorem ispem yes",
+      },
+      {
+        id: uuidv4(),
+        planDes: "lorem ispem yes",
+      },
+      {
+        id: uuidv4(),
+        planDes: "lorem ispem yes",
+      },
+      {
+        id: uuidv4(),
+        planDes: "lorem ispem yes",
+      },
+      {
+        id: uuidv4(),
+        planDes: "lorem ispem yes",
+      },
+      {
+        id: uuidv4(),
+        planDes: "lorem ispem yes",
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    plan: "Sliver",
+    price: "₹999/-",
+    planList: [
+      {
+        id: uuidv4(),
+        planDes: "lorem ispem yes",
+      },
+      {
+        id: uuidv4(),
+        planDes: "lorem ispem yes",
+      },
+      {
+        id: uuidv4(),
+        planDes: "lorem ispem yes",
+      },
+      {
+        id: uuidv4(),
+        planDes: "lorem ispem yes",
+      },
+      {
+        id: uuidv4(),
+        planDes: "lorem ispem yes",
+      },
+      {
+        id: uuidv4(),
+        planDes: "lorem ispem yes",
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    plan: "Gold",
+    price: "₹1999/-",
+    planList: [
+      {
+        id: uuidv4(),
+        planDes: "lorem ispem yes",
+      },
+      {
+        id: uuidv4(),
+        planDes: "lorem ispem yes",
+      },
+      {
+        id: uuidv4(),
+        planDes: "lorem ispem yes",
+      },
+      {
+        id: uuidv4(),
+        planDes: "lorem ispem yes",
+      },
+      {
+        id: uuidv4(),
+        planDes: "lorem ispem yes",
+      },
+      {
+        id: uuidv4(),
+        planDes: "lorem ispem yes",
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    plan: "Platinum",
+    price: "₹3999/-",
+    planList: [
+      {
+        id: uuidv4(),
+        planDes: "lorem ispem yes",
+      },
+      {
+        id: uuidv4(),
+        planDes: "lorem ispem yes",
+      },
+      {
+        id: uuidv4(),
+        planDes: "lorem ispem yes",
+      },
+      {
+        id: uuidv4(),
+        planDes: "lorem ispem yes",
+      },
+      {
+        id: uuidv4(),
+        planDes: "lorem ispem yes",
+      },
+      {
+        id: uuidv4(),
+        planDes: "lorem ispem yes",
+      },
+    ],
+  },
+];

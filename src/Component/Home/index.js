@@ -1,4 +1,5 @@
 import { Component } from "react";
+
 import { VscQuote } from "react-icons/vsc";
 import { FaMedal } from "react-icons/fa";
 import { HiMiniUserGroup } from "react-icons/hi2";
@@ -9,15 +10,24 @@ import {
   leagueDetails,
   featureDetails,
   venueDetails,
+  combainDetail,
+  cskPlayers,
+  rcbPlayers,
+  subscriptionDetails,
 } from "../../Object/index";
 
 import "./style.css";
 
 class Home extends Component {
   render() {
+    const compare = {
+      id: 1,
+      teamLogo: "https://wallpapercave.com/wp/wp4166507.jpg",
+      oppoLoog: "https://wallpapercave.com/wp/wp4248215.jpg",
+    };
     return (
       <div className="home-main">
-        <div class="home-landing">
+        <div className="home-landing">
           <h1 className="landing-heading">
             Want to Become LAKHPATI & CROREPATI?
           </h1>
@@ -26,8 +36,8 @@ class Home extends Component {
         <div className="home-about">
           <h1 className="home-about-heading">About Fantasy Sports</h1>
           <p className="home-about-para">
-            <span className="home-about-para-span-start">
-              <VscQuote class="VscQuote-start" />
+            <span className="home-about-para-span-start VscQuote-start">
+              <VscQuote />
             </span>{" "}
             {"      "}
             Dream Eleven and Fantasy sports sincere users are taking advantage
@@ -37,8 +47,8 @@ class Home extends Component {
             of 10 in H2H. H3H, H4H and Small Leagues. Also we give sudden
             lackpot of Grand League & Mega Contest top rank to our Users. Your
             satisfaction is our priority{" "}
-            <span className="home-about-para-span">
-              <VscQuote class="VscQuote-end" />
+            <span className="home-about-para-span VscQuote-end">
+              <VscQuote />
             </span>
           </p>
         </div>
@@ -62,9 +72,13 @@ class Home extends Component {
             </li>
           </ul>
         </div>
+
+        {/*        
         <div className="home-testimonal">
           <h1 className="home-about-heading">Testimonial</h1>
         </div>
+        */}
+
         <div className="home-reveiw">
           <h1 className="home-about-heading">Reviews</h1>
           <ul className="review-list">
@@ -229,7 +243,7 @@ class Home extends Component {
           <h1 className="home-about-heading">Venue Stats</h1>
           <ul className="venue-list">
             {venueDetails.map((eachItem) => (
-              <li className="venue-item">
+              <li className="venue-item" key={eachItem.id}>
                 <div className="venue-logo-section">
                   <div className="feature-top-image-text">
                     <img
@@ -259,13 +273,243 @@ class Home extends Component {
                 </div>
                 <img
                   src={eachItem.imageUrl}
-                  alt="statium image"
+                  alt="statium2  "
                   className="statium-image"
                 />
               </li>
             ))}
           </ul>
         </div>
+        <div className="home-chart">
+          <h1 className="home-about-heading">Team Comparison</h1>
+          <div className="compare-container">
+            <div className="compare-header">
+              <button className="compare-team-button  bg-yellow">CSK</button>
+              <img
+                src="https://ik.imagekit.io/9pisu4akvm/OIP-removebg-preview.png?updatedAt=1706992935092"
+                alt="vs logo"
+                className="compare-vs-logo"
+              />
+              <button className="compare-team-button  bg-red">RCB</button>
+            </div>
+            <div className="compare-body">
+              <div className="compare-sub-header">
+                <img
+                  src={compare.teamLogo}
+                  alt="team logo"
+                  className="compare-sub-header-team-logo"
+                />
+                <div className="compare-line-hor"></div>
+                <p className="compare-match-number">Match 31</p>
+                <div className="compare-line-hor"></div>
+                <img
+                  src={compare.oppoLoog}
+                  alt="team logo"
+                  className="compare-sub-header-team-logo"
+                />
+              </div>{" "}
+              <div className="compare-vertical-line-container">
+                <div className="compare-vertical-line-container-inner">
+                  <div className="compare-vertical-line-container-inner-line"></div>
+                </div>
+                <div className="compare-vertical-line-container-inner">
+                  <div className="compare-vertical-line-container-inner-line"></div>
+                </div>
+              </div>
+              <div className="compare-sub-body">
+                <p className="compare-sub-body-text">20</p>
+                <div className="compare-sub-body-middle">
+                  <div className="compare-sub-body-middle-first">
+                    {" "}
+                    <div className="compare-sub-body-middle-left-span"></div>
+                    <div className="compare-sub-body-middle-right-span  bg-green"></div>
+                  </div>
+                  <p className="compare-match-number">Won</p>
+                  <div className="compare-sub-body-middle-first">
+                    {" "}
+                    <div className="compare-sub-body-middle-left-span"></div>
+                    <div className="compare-sub-body-middle-right-span bg-green"></div>
+                  </div>
+                </div>
+                <p className="compare-sub-body-text">10</p>
+              </div>
+              <div className="compare-vertical-line-container">
+                <div className="compare-vertical-line-container-inner">
+                  <div className="compare-vertical-line-container-inner-line"></div>
+                </div>
+                <div className="compare-vertical-line-container-inner">
+                  <div className="compare-vertical-line-container-inner-line"></div>
+                </div>
+              </div>
+              <div className="compare-sub-body">
+                <p className="compare-sub-body-text">10</p>
+                <div className="compare-sub-body-middle">
+                  <div className="compare-sub-body-middle-first">
+                    {" "}
+                    <div className="compare-sub-body-middle-left-span"></div>
+                    <div className="compare-sub-body-middle-right-span  bg-red"></div>
+                  </div>
+                  <p className="compare-match-number">LOSS</p>
+                  <div className="compare-sub-body-middle-first">
+                    {" "}
+                    <div className="compare-sub-body-middle-left-span"></div>
+                    <div className="compare-sub-body-middle-right-span bg-red"></div>
+                  </div>
+                </div>
+                <p className="compare-sub-body-text">20</p>
+              </div>
+              <div className="compare-vertical-line-container">
+                <div className="compare-vertical-line-container-inner">
+                  <div className="compare-vertical-line-container-inner-line"></div>
+                </div>
+                <div className="compare-vertical-line-container-inner">
+                  <div className="compare-vertical-line-container-inner-line"></div>
+                </div>
+              </div>
+              <div className="compare-sub-body">
+                <p className="compare-sub-body-text">1</p>
+                <div className="compare-sub-body-middle">
+                  <div className="compare-sub-body-middle-first">
+                    {" "}
+                    <div className="compare-sub-body-middle-left-span"></div>
+                    <div className="compare-sub-body-middle-right-span bg-grey"></div>
+                  </div>
+                  <p className="compare-match-number">RESULT</p>
+                  <div className="compare-sub-body-middle-first">
+                    {" "}
+                    <div className="compare-sub-body-middle-left-span"></div>
+                    <div className="compare-sub-body-middle-right-span bg-grey"></div>
+                  </div>
+                </div>
+                <p className="compare-sub-body-text">1</p>
+              </div>
+              <div className="compare-vertical-line-container">
+                <div className="compare-vertical-line-container-inner">
+                  <div className="compare-vertical-line-container-inner-line"></div>
+                </div>
+                <div className="compare-vertical-line-container-inner">
+                  <div className="compare-vertical-line-container-inner-line"></div>
+                </div>
+              </div>
+              <div className="compare-sub-body">
+                <p className="compare-sub-body-text">170</p>
+                <div className="compare-sub-body-middle">
+                  <div className="compare-sub-body-middle-first">
+                    {" "}
+                    <div className="compare-sub-body-middle-left-span"></div>
+                    <div className="compare-sub-body-middle-right-span bg-grey"></div>
+                  </div>
+                  <p className="compare-match-number">SCORE</p>
+                  <div className="compare-sub-body-middle-first">
+                    {" "}
+                    <div className="compare-sub-body-middle-left-span"></div>
+                    <div className="compare-sub-body-middle-right-span bg-grey"></div>
+                  </div>
+                </div>
+                <p className="compare-sub-body-text">190</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="des-section">
+          <h1 className="home-about-heading">Win Prediction</h1>
+          <p className="des-section-desc">
+            Lorem ipsum you would not have seen this kind of huge winnings and
+            earnings in history. Its our responsibility To fill your wallet,
+            Once you become ourPrime User. Fantasy Pandit is another name of
+            trust. Everyone know about our fantasy experts’s potential thats why
+            google give us always 1st ranking. So don’t miss opportunity and
+            join fastWe can say that you would not have us always 1st ranking.
+            seen this kind of huge winnings and can say that you would not have
+            , Once you become our earnings in history. Its our responsibility To
+            fill your wallet, Once you become our know about our Prime User.
+            Fantasy Pandit is another name of trust. Everyone know about our
+            google give fantasy experts’s potential thats why google give us
+            always 1st ranking. google give So don’t miss opportunity and join
+            fast
+          </p>
+        </div>
+        <div className="select-team">
+          <h1 className="home-about-heading">2 Fantasy teams & 1 Guruchela </h1>
+          <div className="select-list-container">
+            <div className="select-list-container-inner">
+              <img
+                src="https://th.bing.com/th/id/OIP.OQ_HFgcM5l88xJbYS5CYEgHaE-?w=1200&h=807&rs=1&pid=ImgDetMain"
+                alt="logo"
+                className="select-logo"
+              />
+
+              <ul className="select-list-container-inner-list">
+                {cskPlayers.map((eachItem) => (
+                  <li
+                    className="select-list-container-inner-item"
+                    key={eachItem.id}
+                  >
+                    {eachItem.name}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="select-list-container-inner">
+              <img
+                src="https://wallpapercave.com/wp/wp4248215.jpg"
+                alt="logo"
+                className="select-logo"
+              />
+
+              <ul className="select-list-container-inner-list">
+                {rcbPlayers.map((eachItem) => (
+                  <li
+                    className="select-list-container-inner-item"
+                    key={eachItem.id}
+                  >
+                    {eachItem.name}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="select-list-container-inner">
+              <div className="select-list-heading-main">
+                <p className="select-list-heading">Guruchela</p>
+              </div>
+
+              <ul className="select-list-container-inner-list">
+                {combainDetail.map((eachItem) => (
+                  <li
+                    className="select-list-container-inner-item"
+                    key={eachItem.id}
+                  >
+                    {eachItem.name}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="subscription">
+          <h1 className="home-about-heading">Subscription Plans </h1>
+          <ul className="subscription-list">
+            {subscriptionDetails.map((eachItems) => {
+              const { planList } = eachItems;
+              return (
+                <li className="subscription-item" key={eachItems.id}>
+                  <p className="subscription-item-heading">{eachItems.plan}</p>
+                  <p className="subscription-item-price">{eachItems.price} </p>
+                  <ul className="subscription-inner-list">
+                    {planList.map((eachItem) => (
+                      <li className="subscription-inner-item" key={eachItem.id}>
+                        {eachItem.planDes}
+                      </li>
+                    ))}
+                  </ul>
+                  <button className="subscription-item-button">SELECT</button>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        <div className="home-footer"></div>
       </div>
     );
   }
