@@ -1,5 +1,5 @@
 import { Component } from "react";
-
+import Subscription from "../Subscription";
 import { VscQuote } from "react-icons/vsc";
 import { FaMedal } from "react-icons/fa";
 import { HiMiniUserGroup } from "react-icons/hi2";
@@ -13,7 +13,6 @@ import {
   combainDetail,
   cskPlayers,
   rcbPlayers,
-  subscriptionDetails,
 } from "../../Object/index";
 
 import "./style.css";
@@ -487,28 +486,7 @@ class Home extends Component {
             </div>
           </div>
         </div>
-        <div className="subscription">
-          <h1 className="home-about-heading">Subscription Plans </h1>
-          <ul className="subscription-list">
-            {subscriptionDetails.map((eachItems) => {
-              const { planList } = eachItems;
-              return (
-                <li className="subscription-item" key={eachItems.id}>
-                  <p className="subscription-item-heading">{eachItems.plan}</p>
-                  <p className="subscription-item-price">{eachItems.price} </p>
-                  <ul className="subscription-inner-list">
-                    {planList.map((eachItem) => (
-                      <li className="subscription-inner-item" key={eachItem.id}>
-                        {eachItem.planDes}
-                      </li>
-                    ))}
-                  </ul>
-                  <button className="subscription-item-button">SELECT</button>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
+        <Subscription />
         <div className="home-footer"></div>
       </div>
     );

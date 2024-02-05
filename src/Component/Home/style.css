@@ -890,7 +890,7 @@
 
 .subscription-list {
   width: 90%;
-  margin-top: 30px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;

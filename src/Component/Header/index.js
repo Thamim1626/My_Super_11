@@ -21,8 +21,8 @@ class Header extends Component {
                 </Link>
               </li>
               <li className="menu-item">
-                <Link to="/about" className="nav-link" onClick={close}>
-                  About
+                <Link to="/subscription" className="nav-link" onClick={close}>
+                  Subscription
                 </Link>
               </li>
               <li className="menu-item">
@@ -50,8 +50,8 @@ class Header extends Component {
             </Link>
           </li>
           <li className="header-nav-item">
-            <Link to="/about" className="nav-link">
-              About
+            <Link to="/subscription" className="nav-link">
+              Subscription
             </Link>
           </li>
           <li className="header-nav-item">
