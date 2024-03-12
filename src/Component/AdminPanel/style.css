@@ -1,0 +1,47 @@
+.admin-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.admin-main-heading {
+  font-size: 32px;
+  margin-top: 26px;
+  margin-bottom: 20px;
+}
+
+.admin-inner {
+  width: 90%;
+  max-width: 600px;
+  background-color: rgb(138, 167, 157);
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  box-shadow: 2px 2px 4px grey;
+}
+
+.compare-team-button-admin {
+  width: 90%;
+  height: 40px;
+  background-color: azure;
+  color: black;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px;
+}
+
+.matchno-input {
+  width: 60px;
+  height: 40px;
+  text-align: center;
+}
+
+.team-heading-ab {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px royalblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}

@@ -891,11 +891,10 @@
 .subscription-list {
   width: 90%;
   padding-top: 30px;
+  list-style: none;
   display: flex;
   flex-direction: column;
-  align-items: center;
   flex-wrap: wrap;
-  list-style: none;
 }
 .subscription-item {
   width: 90%;
@@ -941,14 +940,16 @@
 }
 
 .subscription-inner-list {
-  width: 100%;
-  list-style: none;
+  width: 85%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-left: 30px;
+  align-self: center;
 }
 .subscription-inner-item {
-  margin-top: 12px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #485a6b;
 }
 
 .subscription-item-button {

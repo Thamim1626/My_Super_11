@@ -10,7 +10,10 @@
   box-sizing: border-box;
 }
 .header-logo {
-  background-color: white;
+}
+.website-logo-image {
+  width: 240px;
+  height: 80px;
 }
 
 @media (min-width: 576px) {
@@ -117,5 +120,17 @@
   height: 20px;
   font-size: 20px;
   font-weight: bold;
+  color: white;
+}
+
+.login-button {
+  width: 130px;
+  height: 30px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.301);
+  outline: none;
+  border: none;
+  font-weight: bold;
+  background-color: #ec7350;
   color: white;
 }

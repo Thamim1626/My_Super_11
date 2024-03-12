@@ -40,7 +40,13 @@ class Header extends Component {
   render() {
     return (
       <div className="main-header">
-        <h1 className="header-logo">Logo....</h1>
+        <h1 className="header-logo">
+          <img
+            src="https://ik.imagekit.io/9pisu4akvm/Untitled-drswd-01.png?updatedAt=1709801641584"
+            alt="website log "
+            className="website-logo-image"
+          />
+        </h1>
 
         {this.menuPopup()}
         <ul className="header-nav-list">
@@ -60,7 +66,13 @@ class Header extends Component {
             </Link>
           </li>
         </ul>
-        <div className="header-empty"></div>
+        <div className="header-empty">
+          {" "}
+          <Link to="/login">
+            {" "}
+            <button className="login-button">Login</button>
+          </Link>
+        </div>
       </div>
     );
   }

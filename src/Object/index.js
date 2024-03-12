@@ -406,27 +406,39 @@ export const subscriptionDetails = [
     planList: [
       {
         id: uuidv4(),
-        planDes: "lorem ispem yes",
+        planDes: "1 DREAM11 Team Per Match (Cricket Only)",
       },
       {
         id: uuidv4(),
-        planDes: "lorem ispem yes",
+        planDes: "Only Low Entry SL League, No GL",
       },
       {
         id: uuidv4(),
-        planDes: "lorem ispem yes",
+        planDes: "Perfect C & VC Pair ",
       },
       {
         id: uuidv4(),
-        planDes: "lorem ispem yes",
+        planDes: "No Support",
       },
       {
         id: uuidv4(),
-        planDes: "lorem ispem yes",
+        planDes: "Perfect Playing XI",
       },
       {
         id: uuidv4(),
-        planDes: "lorem ispem yes",
+        planDes: "Injured Player News",
+      },
+      {
+        id: uuidv4(),
+        planDes: "Power Players Journey",
+      },
+      {
+        id: uuidv4(),
+        planDes: "Get Update On App",
+      },
+      {
+        id: uuidv4(),
+        planDes: "1 Month Validity",
       },
     ],
   },
@@ -437,27 +449,39 @@ export const subscriptionDetails = [
     planList: [
       {
         id: uuidv4(),
-        planDes: "lorem ispem yes",
+        planDes: "9 Dream11 Team Per Match (Cricket & Football)",
       },
       {
         id: uuidv4(),
-        planDes: "lorem ispem yes",
+        planDes: "League Joining Suggestions",
       },
       {
         id: uuidv4(),
-        planDes: "lorem ispem yes",
+        planDes: "Perfect C & VC Pair",
       },
       {
         id: uuidv4(),
-        planDes: "lorem ispem yes",
+        planDes: "Whats App Chat Support With Experts",
       },
       {
         id: uuidv4(),
-        planDes: "lorem ispem yes",
+        planDes: "A Perfect Playing XI",
       },
       {
         id: uuidv4(),
-        planDes: "lorem ispem yes",
+        planDes: "Injured Player News",
+      },
+      {
+        id: uuidv4(),
+        planDes: "Power Player/Safe Players For Sereis",
+      },
+      {
+        id: uuidv4(),
+        planDes: "Get Updates On Whats App",
+      },
+      {
+        id: uuidv4(),
+        planDes: "LifeTime Validity",
       },
     ],
   },
@@ -468,27 +492,39 @@ export const subscriptionDetails = [
     planList: [
       {
         id: uuidv4(),
-        planDes: "lorem ispem yes",
+        planDes: "20 Dream11 Team Per Match (Cricket, Football, & Kabaddi)",
       },
       {
         id: uuidv4(),
-        planDes: "lorem ispem yes",
+        planDes: "League Joining & Investment Suggestions",
       },
       {
         id: uuidv4(),
-        planDes: "lorem ispem yes",
+        planDes: "Perfect C & VC Pair",
       },
       {
         id: uuidv4(),
-        planDes: "lorem ispem yes",
+        planDes: "Whats App+Call Support Support With Experts",
       },
       {
         id: uuidv4(),
-        planDes: "lorem ispem yes",
+        planDes: "Tips/Tricks & Strategies to Win Grand Leagues (GL)",
       },
       {
         id: uuidv4(),
-        planDes: "lorem ispem yes",
+        planDes: "Match Winning Prediction",
+      },
+      {
+        id: uuidv4(),
+        planDes: "Top Class GL Experienced Experts",
+      },
+      {
+        id: uuidv4(),
+        planDes: "Get Updates On Whats App & Telegram",
+      },
+      {
+        id: uuidv4(),
+        planDes: "LifeTime Validity",
       },
     ],
   },
@@ -499,27 +535,43 @@ export const subscriptionDetails = [
     planList: [
       {
         id: uuidv4(),
-        planDes: "lorem ispem yes",
+        planDes: "1 Powerful Dream11 Team Per Match (All Sports)",
       },
       {
         id: uuidv4(),
-        planDes: "lorem ispem yes",
+        planDes: "League Joining & Investment Suggestions",
       },
       {
         id: uuidv4(),
-        planDes: "lorem ispem yes",
+        planDes: "Perfect C & VC Pair ",
       },
       {
         id: uuidv4(),
-        planDes: "lorem ispem yes",
+        planDes: "Whats App+Call Support With Expert & Admin Both",
       },
       {
         id: uuidv4(),
-        planDes: "lorem ispem yes",
+        planDes: "Only Some Selected leagues",
       },
       {
         id: uuidv4(),
-        planDes: "lorem ispem yes",
+        planDes: "Limited User Pack (Just 10 Users per Month)",
+      },
+      {
+        id: uuidv4(),
+        planDes: "Per High Investment Suggestions",
+      },
+      {
+        id: uuidv4(),
+        planDes: "Whats App Updates",
+      },
+      {
+        id: uuidv4(),
+        planDes: "Get Updates Personally On Whats app",
+      },
+      {
+        id: uuidv4(),
+        planDes: "Validity- Upto 1 Lakh Profit Amount",
       },
     ],
   },
